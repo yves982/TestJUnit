@@ -19,6 +19,6 @@ public class TestIndisponibilite {
     @Ignore
     @Test
     public void ignore() {
-        Assert.fail("Echec ignorÃ©");
+        Assert.fail("Echec ignoré");
     }
 }
