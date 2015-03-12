@@ -12,8 +12,8 @@ public class Operations {
         return lRetour;
     }
     
-    // Cette mÃ©thode ne fonctionne pas correctement
-    // Les tests vont le vÃ©rifier 
+    // Cette méthode ne fonctionne pas correctement
+    // Les tests vont le vérifier 
     public static long multiplier(final long...pNombres) {
         long lRetour = 0;
         for(final long lNombre : pNombres) {
@@ -22,11 +22,10 @@ public class Operations {
         return lRetour;
     }
     
-
     public static long diviser(final long...pNombres) {
         if(pNombres.length < 2) {
             throw new IllegalArgumentException(
-                    "Il faut au moins deux nombres en entrÃ©e");
+                    "Il faut au moins deux nombres en entrée");
         }
         long lRetour = pNombres[0];
         for(int i=1;i<pNombres.length;i++) {
@@ -35,7 +34,19 @@ public class Operations {
         return lRetour;
     }
     
-    // Cette mÃ©thode vÃ©rifie que les longueurs passÃ©es en paramÃ¨tre
+    public static double soustraire(final double...pNombres) {
+        if(pNombres.length < 2) {
+            throw new IllegalArgumentException(
+                    "Il faut au moins deux nombres en entrée");
+        }
+        double lRetour = pNombres[0];
+        for(int i=1;i<pNombres.length;i++) {
+            lRetour -= pNombres[i];
+        }
+        return lRetour;
+    }
+
+    // Cette méthode vérifie que les longueurs passées en paramètre
     // sont celles d'un triangle rectangle
     public static Boolean[] pythagore(final long[]...pLongueurs) {
         final Boolean[] lRetours = new Boolean[pLongueurs.length];
@@ -44,7 +55,7 @@ public class Operations {
             final long[] lLongeurs = pLongueurs[i];
             if(lLongeurs.length != 3) {
                 throw new IllegalArgumentException(
-                    "Les blocs de longueurs doivent Ãªtre de 3 Ã©lÃ©ments");
+                    "Les blocs de longueurs doivent être de 3 éléments");
             }
             
             final long[] lCopieLongueurs = lLongeurs.clone();
@@ -63,5 +74,5 @@ public class Operations {
         }
 
         return lRetours;
-    }    
+    }
 }

@@ -5,4 +5,4 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JMock"/>
 	<classpathentry kind="output" path="bin"/>
-</classpath>
+</classpath> 

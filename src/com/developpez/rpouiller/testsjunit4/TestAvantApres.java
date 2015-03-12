@@ -14,7 +14,7 @@ public class TestAvantApres {
     
     @After
     public void apresTest() {
-        System.out.println("AprÃ¨s Test");
+        System.out.println("Après Test");
         System.out.println("------------------------");
     }
     
@@ -25,11 +25,11 @@ public class TestAvantApres {
 
     @Test
     public void deuxiemeTest() {
-        System.out.println("DeuxiÃ¨me Test");
+        System.out.println("Deuxième Test");
     }
 
     @Test
     public void troisiemeTest() {
-        System.out.println("TroisiÃ¨me Test");
+        System.out.println("Troisième Test");
     }
 }
